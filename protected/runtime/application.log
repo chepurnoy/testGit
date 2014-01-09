@@ -1,0 +1,32 @@
+2014/01/09 22:39:39 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbCollapse" is invalid. Make sure it points to an existing directory or file.' in C:\make a website\testGit\protected\framework\YiiBase.php:347
+Stack trace:
+#0 C:\make a website\testGit\protected\extensions\yiibooster\widgets\TbNavbar.php(10): YiiBase::import('bootstrap.widge...')
+#1 C:\make a website\testGit\protected\framework\YiiBase.php(320): require('C:\make a websi...')
+#2 C:\make a website\testGit\protected\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#3 C:\make a website\testGit\protected\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#4 C:\make a website\testGit\protected\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#5 C:\make a website\testGit\protected\views\layouts\main.php(47): CBaseController->widget('application.ext...', Array)
+#6 C:\make a website\testGit\protected\framework\web\CBaseController.php(126): require('C:\make a websi...')
+#7 C:\make a website\testGit\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\make a websi...', Array, true)
+#8 C:\make a website\testGit\protected\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\make a websi...', Array, true)
+#9 C:\make a website\testGit\protected\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 C:\make a website\testGit\protected\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 C:\make a website\testGit\protected\framework\web\CBaseController.php(206): COutputProcessor->run()
+#12 C:\make a website\testGit\protected\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 C:\make a website\testGit\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#14 C:\make a website\testGit\protected\framework\web\CBaseController.php(126): require('C:\make a websi...')
+#15 C:\make a website\testGit\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\make a websi...', Array, true)
+#16 C:\make a website\testGit\protected\framework\web\CController.php(784): CBaseController->renderFile('C:\make a websi...', Array, true)
+#17 C:\make a website\testGit\protected\controllers\SiteController.php(32): CController->render('index')
+#18 C:\make a website\testGit\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\make a website\testGit\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\make a website\testGit\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\make a website\testGit\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\make a website\testGit\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#23 C:\make a website\testGit\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#24 C:\make a website\testGit\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\make a website\testGit\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://testgit.dev/index.php?r=site/contact
+---
