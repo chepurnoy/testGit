@@ -21,7 +21,7 @@ class UserController extends Controller {
      * Action Add Like
      * @param type $id
      */
-    public function actionAddLike($id,$name)
+    public function actionAddLike($id)
     {
         $userIdLike = $id;
         //Get a Specific User
@@ -35,7 +35,7 @@ class UserController extends Controller {
             $model->userIdLike = $userIdLike;
             //Save data
             if ($model->save()) {
-                Yii::app()->user->setFlash('like', "Your add like to $name");
+                Yii::app()->user->setFlash('like', "Your add like");
             }
         }
         $this->redirect($previousPage);
@@ -45,7 +45,7 @@ class UserController extends Controller {
      * @author    Igor Chepurnoy 
      * UnLike Function
      */
-    public function actionUnLike($id,$name)
+    public function actionUnLike($id)
     {
         $userIdLike = $id;
         //Create Likes Model
@@ -57,7 +57,7 @@ class UserController extends Controller {
             //Delete like user
             if ($model->deleteAllByAttributes(array('userIdLike' => $userIdLike, 'ipUser' => Yii::app()->request->userHostAddress))) {
                 //Set Flash
-                Yii::app()->user->setFlash('like', "Your unlike $name");
+                Yii::app()->user->setFlash('like', "Your unlikes");
             }
         }
         $this->redirect($previousPage);

@@ -21,6 +21,9 @@ class SiteController extends Controller
             'page' => array(
                 'class' => 'CViewAction',
             ),
+            'cocoCod' => array(
+                'class' => 'CocoCodAction',
+            ),
         );
     }
 
@@ -38,6 +41,36 @@ class SiteController extends Controller
         $this->render('index', array(
             'repository'   => $findRepository,
             'contributors' => $contributors,
+        ));
+    }
+    
+    /**
+     * @author    Igor Chepurnoy 
+     * Action Register
+     */
+    public function actionRegister() {
+        $this->pageTitle = 'Registration Page';
+        //Create models
+        $userModel = new UserModel;
+        $loginForm = new LoginForm;
+        //Get post param
+        $post = Yii::app()->request->getPost('UserModel');
+        //Ajax Validation
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'commentform') {
+            echo CActiveForm::validate($userModel);
+            Yii::app()->end();
+        }
+        //Collect data and save it
+        if (!empty($post)) {
+            $userModel->attributes = Yii::app()->request->getPost('UserModel');
+            if ($userModel->save()) {
+                if ($loginForm->oneStepLogin($userModel->email, $post['password'])) {
+                    $this->redirect(Yii::app()->homeUrl);
+                }
+            }
+        }
+        $this->render('register', array(
+            'model' => $userModel,
         ));
     }
 
@@ -81,32 +114,27 @@ class SiteController extends Controller
     }
     
     /**
+     * @author    Igor Chepurnoy 
      * Displays the login page
      */
-    public function actionLogin()
-    {
-        $pages = PageModel::model()->findAll();
+    public function actionLogin() {
+        $this->pageTitle = 'Login Page';
         $model = new LoginForm;
-        $route = 'admin/contactus/admin';
 
         // if it is ajax validation request
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'commentform') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
-
         // collect user input data
         if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
             if ($model->validate() && $model->login())
-                $this->redirect(Yii::app()->createUrl($route));
+                $this->redirect(Yii::app()->user->returnUrl);
         }
         // display the login form
-        $this->render('login', array(
-            'model' => $model,
-            'pages' => $pages
-        ));
+        $this->render('login', array('model' => $model));
     }
 
     /**

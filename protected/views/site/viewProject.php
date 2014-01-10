@@ -3,13 +3,13 @@
 <div class="row">
     <div class="span6">
         <h2><?php echo $project['full_name']; ?></h2>
-        <p><strong>Description:</strong><?php echo $project['description']; ?></p>
-        <p><strong>Wathers:</strong><?php echo $project['watchers']; ?></p>
-        <p><strong>Forks:</strong><?php echo $project['forks']; ?></p>
-        <p><strong>open issues:</strong><?php echo $project['open_issues_count']; ?></p>
-        <p><strong>homepage:</strong><?php echo $project['homepage']; ?></p>
-        <p><strong>GitHub repo:</strong><?php echo $project['git_url']; ?></p>
-        <p><strong>created_at:</strong><?php echo $project['created_at']; ?></p>
+        <p><strong>Description: </strong><?php echo $project['description']; ?></p>
+        <p><strong>Wathers: </strong><?php echo $project['watchers']; ?></p>
+        <p><strong>Forks: </strong><?php echo $project['forks']; ?></p>
+        <p><strong>open issues: </strong><?php echo $project['open_issues_count']; ?></p>
+        <p><strong>homepage: </strong><?php echo $project['homepage']; ?></p>
+        <p><strong>GitHub repo: </strong><?php echo $project['git_url']; ?></p>
+        <p><strong>created_at: </strong><?php echo $project['created_at']; ?></p>
     </div>
     <div class="span6">
         <h2>Contributers:</h2>

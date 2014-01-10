@@ -1,12 +1,12 @@
 <?php Yii::app()->clientScript->registerScript(
    'myHideEffect',
-   '$(".succsess_box").animate({opacity: 1.0}, 3000).fadeOut("slow");',
+   '$(".alert-success").animate({opacity: 1.0}, 3000).fadeOut("slow");',
    CClientScript::POS_READY
 ); ?>
 <div class="content spr">
     <div class="cont">
         <?php if(Yii::app()->user->hasFlash('success')): ?>
-            <div class="succsess_box"> <?php echo Yii::app()->user->getFlash('success');  ?></div> 
+            <div class="alert alert-success"> <?php echo Yii::app()->user->getFlash('success');  ?></div> 
                 <?php endif; ?>        
         <h2>Send Us a Message</h2>
         <div class="contact_form">

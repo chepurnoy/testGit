@@ -8,45 +8,50 @@ $localConfig = file_exists(dirname(__FILE__) . '/local.php') ? require_once (dir
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'Main',
-
     // preloading 'log' component
     'preload' => array(
         'log',
         'bootstrap'
-        ),
+    ),
     // autoloading model and component classes
     'import' => array(
         'application.extensions.*',
         'application.models.*',
         'application.components.*',
         'application.helpers.*',
+        'application.extensions.cocoCod.*',
     ),
     'modules' => array(
-// uncomment the following to enable the Gii tool
-
+        'admin',
 
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'igor',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('10.8.4.155', '::1'),
-             'generatorPaths' => array(
-          'bootstrap.gii'
-       ),
+            'generatorPaths' => array(
+                'bootstrap.gii'
+            ),
         ),
-
     ),
     // application components
     'components' => array(
         'bootstrap' => array(
             'class' => 'application.extensions.yiibooster.components.Bootstrap',
         ),
-        'user' => array(
-// enable cookie-based authentication
-            'class' => 'WebUser',
-            'allowAutoLogin' => true,
+        'authManager' => array(
+            'class' => 'AuthManager',
+            // Default role
+            'defaultRoles' => array('guest'),
         ),
-
+        'user' => array(
+                        'class' => 'WebUser',
+                        'table' => 'UserModel',
+                        'fieldRole' => 'type',
+                        'loginUrl' => array('site/login'),
+                        // enable cookie-based authentication
+                        'allowAutoLogin' => true,
+                ),
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
             'urlFormat' => 'path',
@@ -71,8 +76,6 @@ return array(
             'password' => '',
             'charset' => 'utf8',
         ),
-
-
         'errorHandler' => array(
 // use 'site/error' action to display errors
             'errorAction' => 'site/error',
@@ -84,15 +87,14 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'info',
                 ),
-                // uncomment the following to show log messages on web pages
-                /*
-                array(
-                    'class'=>'CWebLogRoute',
-                ),
-                */
+            // uncomment the following to show log messages on web pages
+            /*
+              array(
+              'class'=>'CWebLogRoute',
+              ),
+             */
             ),
         ),
-
     ),
     // application-level parameters that can be accessed
 // using Yii::app()->params['paramName']

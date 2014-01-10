@@ -22,8 +22,10 @@
                 'class' => 'application.extensions.yiibooster.widgets.TbMenu',
                 'items' => array(
                     array('label' => 'Contact', 'url' => array('site/contact')),
-                    array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                    array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                    array('label' => 'Registration', 'url' => array('/site/register'),'visible' => Yii::app()->user->isGuest),
+                    array('label' => 'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label' => 'Admin Panel', 'url' =>Yii::app()->createUrl('/admin'),'linkOptions' => array('target'=>'_blank'),'visible' => Yii::app()->user->getType() == 'admin'),
+                    array('label' => 'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                 )
             )
         )

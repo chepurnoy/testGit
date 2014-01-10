@@ -1,0 +1,11 @@
+.cocowidget {
+    padding: 3px;
+    overflow: auto;
+}
+
+.cocowidget .uploader {
+}
+
+.cocowidget .logger {
+    display: none;
+}
