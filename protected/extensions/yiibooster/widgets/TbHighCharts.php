@@ -34,62 +34,66 @@
  * To find out more about the possible {@link $options} attribute please refer to
  * {@link http://www.hightcharts.com/ Highcharts site}
  *
- * @package booster.widgets.charts
+* @package booster.widgets.charts
  */
 class TbHighCharts extends CWidget
 {
-    /**
-     * @var array $options the highcharts js configuration options
-     */
-    public $options = array();
+	/**
+	 * @var array $options the highcharts js configuration options
+	 */
+	public $options = array();
 
-    /**
-     * @var array $htmlOptions the HTML tag attributes
-     */
-    public $htmlOptions = array();
+	/**
+	 * @var array $htmlOptions the HTML tag attributes
+	 */
+	public $htmlOptions = array();
 
-    /**
-     * Renders the widget.
-     */
-    public function run()
-    {
-        $id = $this->getId();
+	/**
+	 * Renders the widget.
+	 */
+	public function run()
+	{
+		$id = $this->getId();
 
-        // if there is no renderTo id, build the layer with current id and initialize renderTo option
-        if (!isset($this->options['chart']) || !isset($this->options['chart']['renderTo'])) {
-            $this->htmlOptions['id'] = $id;
-            echo '<div ' . CHtml::renderAttributes($this->htmlOptions) . ' ></div>';
+		// if there is no renderTo id, build the layer with current id and initialize renderTo option
+		if (!isset($this->options['chart']) || !isset($this->options['chart']['renderTo'])) {
+			$this->htmlOptions['id'] = $id;
+			echo '<div ' . CHtml::renderAttributes($this->htmlOptions) . ' ></div>';
 
-            if (isset($this->options['chart']) && is_array($this->options['chart'])) {
-                $this->options['chart']['renderTo'] = $id;
-            } else {
-                $this->options['chart'] = array('renderTo' => $id);
-            }
-        }
-        $this->registerClientScript();
-    }
+			if (isset($this->options['chart']) && is_array($this->options['chart'])) {
+				$this->options['chart']['renderTo'] = $id;
+			} else {
+				$this->options['chart'] = array('renderTo' => $id);
+			}
+		}
+		$this->registerClientScript();
+	}
 
-    /**
-     * Publishes and registers the necessary script files.
-     */
-    protected function registerClientScript()
-    {
-        Yii::app()->bootstrap->registerAssetJs('highcharts/highcharts.js');
+	/**
+	 * Publishes and registers the necessary script files.
+	 */
+	protected function registerClientScript()
+	{
+		$assets = Bootstrap::getBooster()->assetsRegistry;
 
-        $this->options = CMap::mergeArray(array('exporting' => array('enabled' => true)), $this->options);
+		$assets->registerPackage('highcharts');
 
-        if (isset($this->options['exporting']) && @$this->options['exporting']['enabled']) {
-            Yii::app()->bootstrap->registerAssetJs('highcharts/modules/exporting.js');
-        }
-        if (isset($this->options['theme'])) {
-            Yii::app()->bootstrap->registerAssetJs('highcharts/themes/' . $this->options['theme'] . '.js');
-        }
+		$baseUrl = $assets->packages['highcharts']['baseUrl'];
 
-        $options = CJavaScript::jsonEncode($this->options);
+		$this->options = CMap::mergeArray(array('exporting' => array('enabled' => true)), $this->options);
 
-        Yii::app()->getClientScript()->registerScript(
-            __CLASS__ . '#' . $this->getId(),
-            "var highchart{$this->getId()} = new Highcharts.Chart({$options});"
-        );
-    }
+		if (isset($this->options['exporting']) && @$this->options['exporting']['enabled']) {
+			$assets->registerScriptFile($baseUrl . '/modules/exporting.js');
+		}
+		if (isset($this->options['theme'])) {
+			$assets->registerScriptFile($baseUrl . '/themes/' . $this->options['theme'] . '.js');
+		}
+
+		$options = CJavaScript::encode($this->options);
+
+		$assets->registerScript(
+			__CLASS__ . '#' . $this->getId(),
+			"var highchart{$this->getId()} = new Highcharts.Chart({$options});"
+		);
+	}
 }

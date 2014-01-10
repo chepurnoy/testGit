@@ -1,50 +1,16 @@
-<?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="en" />
-
-        <!-- blueprint CSS framework -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-        <!--[if lt IE 8]>
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-        <![endif]-->
-
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+        <meta charset="utf-8">
+        <!--[if IE]><![endif]-->
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <meta name="description" content="">
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     </head>
-    <?php Yii::app()->getComponent("bootstrap"); ?>
-    <body>
-
-        <div class="container" id="page">
-            <?php
-            $this->widget(
-                    'application.extensions.yiibooster.widgets.TbNavbar', array(
-                'brand' => 'MobiDev GitHub Browser',
-                'brandUrl' => Yii::app()->homeUrl,
-                'fixed' => true,
-                'items' => array(
-                    array(
-                        'class' => 'application.extensions.yiibooster.widgets.TbMenu',
-                        'items' => array(
-                            array('label' => 'Home', 'url' => array(Yii::app()->homeUrl)),
-                            array('label' => 'Users', 'url' => array('users')),
-                            array('label' => 'Search', 'url' => array('search')),
-                            array('label' => 'Likes', 'url' => array('likes')),
-                            array('label' => 'Contact', 'url' => array('contact')),
-                            array('label' => 'Login', 'url' => array('site/login')),
-                            array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
-                        )
-                    )
-                )
-                    )
-            );
-            ?>
-            <!-- mainmenu -->
+    <div class="container">
+        <header>
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -52,18 +18,24 @@
                 ));
                 ?><!-- breadcrumbs -->
             <?php endif ?>
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class='pull-right search'>
+                    <form class="form-search" action="<?php echo Yii::app()->createUrl('site/search'); ?>">
+                        <div class="input-append">
+                            <input type="text" name="title" class="span2 search-query">
+                            <button type="submit" class="btn">Search</button>
+                        </div>
+                    </form>
+                </div>
+            <div class="hero-unit">
 
+                <h1><?php echo CHtml::link("MobiDev GitHub Browser", Yii::app()->homeUrl); ?> >> <?php echo $this->pageTitle; ?></h1>
+            </div>
             <?php echo $content; ?>
-        </div>
-        <div class="clear"></div>
+        </header>
+        <footer>
 
-        <div id="footer">
-            Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-            All Rights Reserved.<br/>
-            <?php echo Yii::powered(); ?>
-        </div><!-- footer -->
-
-        </div><!-- page -->
-
-    </body>
+        </footer>
+    </div>
+</body>
 </html>

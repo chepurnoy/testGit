@@ -7,27 +7,49 @@
  */
 class UserIdentity extends CUserIdentity
 {
-	/**
-	 * Authenticates a user.
-	 * The example implementation makes sure if the username and password
-	 * are both 'demo'.
-	 * In practical applications, this should be changed to authenticate
-	 * against some persistent user identity storage (e.g. database).
-	 * @return boolean whether authentication succeeds.
-	 */
+
+    /**
+     * @var int User ID
+     */
+    public $id;
+
+    /**
+     *  Type of error
+     */
+    const ERROR_USER_INACTIVE = 999;
+
+
 	public function authenticate()
 	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
-			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
+        $userRecord = UserModel::model()->findByAttributes(array('username' => $this->username));
+        if ($userRecord === null)
+        {
+            $this->errorCode=self::ERROR_USERNAME_INVALID;
+        }
+        else if($userRecord->password !== utf8_encode( crypt($this->password,$userRecord->password))){
+
+	            $this->errorCode=self::ERROR_PASSWORD_INVALID;
 	}
+
+        else
+        {
+            $this->setState('type', $userRecord->type);
+            $this->id = $userRecord->id;
+            $this->errorCode = self::ERROR_NONE;
+        }
+
+        return !$this->errorCode;
+	}
+
+
+
+    /**
+     * Get User ID
+     * @return int|string
+     * @author Anna Nosova <its.lynx@gmail.com>
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }

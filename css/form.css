@@ -30,12 +30,13 @@
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @link http://www.yiiframework.com/
- * @copyright 2008-2010 Yii Software LLC
+ * @copyright Copyright &copy; 2008-2010 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
 
 div.form
 {
+  
 }
 
 div.form input,
@@ -96,8 +97,10 @@ div.form input.error,
 div.form textarea.error,
 div.form select.error
 {
-	background: #FEE;
+	border:1px solid;
 	border-color: #C00;
+        border-radius:5px;
+
 }
 
 div.form div.success input,

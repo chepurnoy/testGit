@@ -8,6 +8,44 @@ Thank you all
 
 Antonio Ramirez.
 
+## YiiBooster latest development alpha
+
+
+## YiiBooster version 2.1.1
+- **(fix)** No more overwrites `CClientScript` by Booster #726 (fromYukki)
+
+## YiiBooster version 2.1.0
+- **(fix)** Fix "Maximum call stack size exceeded" inside `TbExtendedGridView` class #430 (fromYukki)
+- **(fix)** Fix attributes on `td` after update in classes `TbJsonButtonColumn` and `TbJsonCheckBoxColumn` #350 (fromYukki)
+- **(enh)** New attributes `readonly` and `disabled` for `TbSelect2` class #305 (fromYukki)
+- **(fix)** Client validation for inline forms using `TbActiveForm` class #242 (fromYukki)
+- **(enh)** Basic version of new widget jQuery UI Layout Manager (`TbUiLayout`) #390 (fromYukki)
+- **(fix)** Fix tooltip binding for `TbButtonColumn`, `TbButtonGroupColumn` and `TbToggleColumn` #271 (fromYukki)
+- **(fix)** Store some Bootstrap widgets in his own variables to prevent conflicts with jQuery UI #228 (fromYukki)
+- **(enh)** Using Bootstrap and Font-Awesome icons together, removed "no-icons" css for Bootstrap, changed logic for icons in widgets #706 (fromYukki)
+- **(enh)** Font Awesome updated to 4.0.3 including CDN #706 (fromYukki)
+- **(fix)** Resolve conflicts between jQuery UI and Bootstrap (fromYukki)
+- **(enh)** Tooltip for `TbButton` and `TbButtonGroup` #724 (fromYukki)
+- **(fix)** Ability to put any custom css class via htmlOptions attribute for `EditableDetailView` #684 (fromYukki)
+- **(fix)** Editable Detail view Date i18n error #686 (fromYukki)
+- **(enh)** Bootstrap carousel with links for images #682
+- **(fix)** Do not display empty alert messages #721 (fromYukki, amrbedair)
+- **(fix)** `TbSelect2` - Multi-select and placeholder lead to empty selection #717 (fromYukki)
+- **(enh)** Now bootstrap can be used with modules (fromYukki)
+- **(enh)** Inline dropDownList without label (naduvko)
+- **(enh)** Date range picker for inline forms (Hrumpa)
+- **(enh)** Updated Bootstrap DateTimePicker to 2.2.0 (adeg)
+- **(enh)** Updated HighCharts to 3.0.6 (hijarian)
+- **(fix)** Now we can use Javascript function definitions in `TbHighCharts` and `TbRedactorJs` options. #696 (hijarian)
+- **(enh)** Now the source distribution will hold the user-level documentation for widgets in universal XML format, along with the examples in PHP. #692 (hijarian)
+- **(enh)** Updated CKEditor library to version 4.2.1 (hijarian)
+- **(enh)** Updated redactor js to version 9.1.5 (kullar84)
+- **(enh)** Updated X-Editable assets to version 1.5.0 (hijarian)
+- **(enh)** Updated Bootstrap Datepicker assets to version 1.2.0 (hijarian)
+- **(fix)** Fixed `TbDatePicker` so it loads locale files from package folder. #688 (hijarian)
+- **(fix)** Fix `TbDateTimePicker`, so it loads locale files from the package folder, fix `TbEditableField` to load required scripts for 'datetime' field type (adeg)
+- **(fix)** Fix for placeholder overwriting in TbInputInline::maskedTextField and TbInputInline::typeAheadField. #694 (hightman)
+
 ## YiiBooster version 2.0.0
 - **(enh)** Bootstrap DateRangePicker updated to 1.2, moment.js updated to 2.2.1 (Hrumpa)
 - **(fix)** Fixed incorrect spec for `moment.js` library package. #673 #672 (fleuryc)
@@ -126,7 +164,6 @@ Antonio Ramirez.
 
 
 ## YiiBooster version 1.0.5
-
 - **(fix)** TbCarousel displayPrevAndNext set to false breaks the page (amosviedo)
 - **(enh)** Bootstrap upgrade to 2.2.1 (kazuo)
 - **(fix)** TbActiveForm class name is displayed on screen (sorinpohontu)

@@ -11,13 +11,12 @@
     <div class="span7">
         <!-- The fileinput-button span is used to style the file input field as button -->
 		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i> <span>Add files...</span>
-            <?php
-            if ($this->hasModel()) :
-                echo CHtml::activeFileField($this->model, $this->attribute, $htmlOptions) . "\n";
-            else :
-                echo CHtml::fileField($name, $this->value, $htmlOptions) . "\n";
-            endif;
-            ?>
+			<?php
+			if ($this->hasModel()) :
+				echo CHtml::activeFileField($this->model, $this->attribute, $htmlOptions) . "\n"; else :
+				echo CHtml::fileField($name, $this->value, $htmlOptions) . "\n";
+			endif;
+			?>
 		</span>
         <button type="submit" class="btn btn-primary start">
             <i class="icon-upload icon-white"></i>
