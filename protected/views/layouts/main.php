@@ -11,6 +11,25 @@
     </head>
     <div class="container">
         <header>
+             <?php 
+            $this->widget(
+            'application.extensions.yiibooster.widgets.TbNavbar', array(
+            'brand' => 'Git Project',
+            'brandUrl' => Yii::app()->homeUrl,
+            'fixed' => true,
+            'items' => array(
+            array(
+                'class' => 'application.extensions.yiibooster.widgets.TbMenu',
+                'items' => array(
+                    array('label' => 'Contact', 'url' => array('site/contact')),
+                    array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                )
+            )
+        )
+            )
+    );
+        ?>
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(

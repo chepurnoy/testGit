@@ -1,22 +1,22 @@
 <?php
 
-class GitRepositories
-{
+/**
+ * @author Igor Chepurnoy 
+ */
+class GitRepositories {
 
     /**
      * Get full data repository
      * @param type $repos
      * @return type
      */
-    public static function getFullDataRepository($owner,$repos)
-    {
+    public static function getFullDataRepository($owner, $repos) {
         $url = "/repos/$owner/$repos";
         $data = self::getJsonData($url);
         if (isset($data['message'])) {
             return false;
         } else {
             return $data;
-
         }
     }
 
@@ -25,8 +25,7 @@ class GitRepositories
      * @param type $repos
      * @return type
      */
-    public static function getJsonData($url)
-    {
+    public static function getJsonData($url) {
         $baseUrl = "https://api.github.com";
         $fullUrl = $baseUrl . $url;
         $ch = curl_init();
@@ -44,19 +43,27 @@ class GitRepositories
         return $data;
     }
 
-    public static function getContributorsUsers($repos)
-    {
+    /**
+     * Get Contributors User
+     * @param type $repos
+     * @return boolean]
+     */
+    public static function getContributorsUsers($repos) {
         $url = "/repos/" . $repos . "/contributors";
         $data = self::getJsonData($url);
-        if (!isset($data['message']) && $data!=null) {
+        if (!isset($data['message']) && $data != null) {
             return array_slice($data, 0, 7);
         } else {
             return false;
         }
     }
 
-    public static function getSingleUser($name)
-    {
+    /**
+     * Get Single User
+     * @param type $name
+     * @return boolean
+     */
+    public static function getSingleUser($name) {
         $url = "/users/" . $name;
         $data = self::getJsonData($url);
         if ($data != null) {
@@ -66,7 +73,12 @@ class GitRepositories
         }
     }
 
-    public static function getSearchItems($title){
+    /**
+     * Get Seacrh items
+     * @param type $title
+     * @return boolean
+     */
+    public static function getSearchItems($title) {
         $url = "/search/repositories?q=" . $title;
         $data = self::getJsonData($url);
         if ($data != null) {

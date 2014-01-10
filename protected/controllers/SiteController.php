@@ -54,6 +54,32 @@ class SiteController extends Controller
         }
     }
 
+    
+    /**
+     * @author    Igor Chepurnoy 
+     * Displays the contact page
+     */
+    public function actionContact() {
+        $this->pageTitle = "Contact Us";
+        $model = new ContactModel;
+        //Ajax validation
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'commentform') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+        //Collect data
+        if (isset($_POST['ContactModel'])) {
+            $model->attributes = $_POST['ContactModel'];
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                $model->save();
+                Yii::app()->user->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                $this->refresh();
+            }
+        }
+        $this->render('contact', array('model' => $model));
+    }
+    
     /**
      * Displays the login page
      */
