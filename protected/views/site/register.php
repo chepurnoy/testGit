@@ -16,18 +16,18 @@
             ?>
             <p>
                 <?php echo $form->labelEx($model, 'firstName'); ?>
-<?php echo $form->textField($model, 'firstName'); ?>
-<?php echo $form->error($model, 'firstName'); ?>
+                <?php echo $form->textField($model, 'firstName'); ?>
+                <?php echo $form->error($model, 'firstName'); ?>
             </p>
 
             <p>
                 <?php echo $form->labelEx($model, 'lastName'); ?>
-<?php echo $form->textField($model, 'lastName'); ?>
-<?php echo $form->error($model, 'lastName'); ?>
+                <?php echo $form->textField($model, 'lastName'); ?>
+                <?php echo $form->error($model, 'lastName'); ?>
             </p>
 
             <div class="pi-row avatar-row">
-            <?php echo $form->hiddenField($model, 'avatar'); ?>
+                <?php echo $form->hiddenField($model, 'avatar'); ?>
                 <img id="afterUploadPreview" src="<?php echo $model->getFileSrc('avatar') ?>" width="222">
             </div>
             <?php echo $form->labelEx($model, 'Your Photo:'); ?>
@@ -56,20 +56,20 @@
             <p>
                 <?php echo $form->labelEx($model, 'email'); ?>
                 <?php echo $form->textField($model, 'email'); ?>
-<?php echo $form->error($model, 'email'); ?>
+                <?php echo $form->error($model, 'email'); ?>
             </p>
 
             <p>
                 <?php echo $form->labelEx($model, 'password'); ?>
                 <?php echo $form->passwordField($model, 'password'); ?>
-<?php echo $form->error($model, 'password'); ?>
+                <?php echo $form->error($model, 'password'); ?>
             </p>
 
 
             <div class="row_form">
-            <?php echo CHtml::submitButton('Submit'); ?>
+                <?php echo CHtml::submitButton('Submit'); ?>
             </div>
-<?php $this->endWidget(); ?>
+            <?php $this->endWidget(); ?>
         </div>
     </div>
     <div class="clear"></div>

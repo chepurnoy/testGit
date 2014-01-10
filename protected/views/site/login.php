@@ -22,21 +22,21 @@
 
             <p>
                 <?php echo $form->labelEx($model, 'username'); ?>
-<?php echo $form->textField($model, 'username'); ?>
-<?php echo $form->error($model, 'username'); ?>
+                <?php echo $form->textField($model, 'username'); ?>
+                <?php echo $form->error($model, 'username'); ?>
             </p>
 
             <p>
                 <?php echo $form->labelEx($model, 'password'); ?>
-<?php echo $form->passwordField($model, 'password'); ?>
-<?php echo $form->error($model, 'password'); ?>
+                <?php echo $form->passwordField($model, 'password'); ?>
+                <?php echo $form->error($model, 'password'); ?>
             </p>
 
             <div class="row_form">
-            <?php echo CHtml::submitButton('Login',array('class' => 'btn btn-default')); ?>
+                <?php echo CHtml::submitButton('Login', array('class' => 'btn btn-default')); ?>
             </div>
 
-<?php $this->endWidget(); ?>
+            <?php $this->endWidget(); ?>
         </div>
     </div>
     <div class="clear"></div>

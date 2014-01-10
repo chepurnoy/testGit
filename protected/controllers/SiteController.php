@@ -147,14 +147,6 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays the about page
-     */
-    public function actionAbout()
-    {
-        $this->render('about');
-    }
-
-    /**
      * Action Search
      */
     public function actionSearch(){
@@ -203,7 +195,6 @@ class SiteController extends Controller
         if (empty($page)) {
             throw new CHttpException(404, 'The specified post cannot be found.');
         }
-        
         $this->render('dynamicPage', array(
             'page' => $page,
         ));
