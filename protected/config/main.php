@@ -23,7 +23,6 @@ return array(
     ),
     'modules' => array(
         'admin',
-
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'igor',
@@ -45,19 +44,20 @@ return array(
             'defaultRoles' => array('guest'),
         ),
         'user' => array(
-                        'class' => 'WebUser',
-                        'table' => 'UserModel',
-                        'fieldRole' => 'type',
-                        'loginUrl' => array('site/login'),
-                        // enable cookie-based authentication
-                        'allowAutoLogin' => true,
-                ),
+            'class' => 'WebUser',
+            'table' => 'UserModel',
+            'fieldRole' => 'type',
+            'loginUrl' => array('site/login'),
+            // enable cookie-based authentication
+            'allowAutoLogin' => true,
+        ),
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
             'urlFormat' => 'path',
             'showScriptName' => false,
             'rules' => array(
                 'gii' => 'gii',
+                'admin' => 'admin/default/index',
                 '<alias:[\w\-]+>' => 'site/page',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',

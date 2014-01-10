@@ -67,7 +67,7 @@
 
 
             <div class="row_form">
-                <?php echo CHtml::submitButton('Submit'); ?>
+                <?php echo CHtml::submitButton('Submit', array('class' => 'btn btn-default')); ?>
             </div>
             <?php $this->endWidget(); ?>
         </div>
