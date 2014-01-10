@@ -189,4 +189,23 @@ class SiteController extends Controller
           'contributors' => $contributors
         ));
     }
+    
+    /**
+     * @author    Igor Chepurnoy
+     * Action Page
+     * @param type $alias
+     * @throws CHttpException
+     */
+    public function actionPage($alias) {
+        $this->layout = 'main';
+        $page = PageModel::model()->findByAttributes(array('link' => $alias));
+        $this->pageTitle = $page->title;
+        if (empty($page)) {
+            throw new CHttpException(404, 'The specified post cannot be found.');
+        }
+        
+        $this->render('dynamicPage', array(
+            'page' => $page,
+        ));
+    }
 }

@@ -12,8 +12,7 @@
  */
 class PageModel extends CActiveRecord
 {
-        const ONE_COLUMN = 1;
-        const TWO_COLUMN_RIGHT_SIDEBAR = 2;       
+           
 	/**
 	 * @return string the associated database table name
 	 */
@@ -21,15 +20,6 @@ class PageModel extends CActiveRecord
 	{
 		return 'Page';
 	}
-      
-        
-        public static function getListTemplate(){
-            $template = array(
-                self::ONE_COLUMN => 'One Column',
-                self::TWO_COLUMN_RIGHT_SIDEBAR => '2 columns with right sidebar'
-            );
-            return $template;
-        }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -39,13 +29,12 @@ class PageModel extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, template, content, link', 'required'),
+			array('title,  content, link', 'required'),
 			array('title', 'length', 'max'=>50),
-			array('template', 'length', 'max'=>27),
 			array('link', 'length', 'max'=>75),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, link, title, template, content', 'safe', 'on'=>'search'),
+			array('id, link, title, content', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,7 +57,6 @@ class PageModel extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Title',
-			'template' => 'Template',
 			'content' => 'Content',
 		);
 	}
@@ -93,7 +81,6 @@ class PageModel extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('template',$this->template,true);
 		$criteria->compare('content',$this->content,true);
 
 		return new CActiveDataProvider($this, array(

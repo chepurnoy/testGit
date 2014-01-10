@@ -13,10 +13,7 @@
 	<?php echo CHtml::encode($data->title); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('template')); ?>:</b>
-	<?php echo CHtml::encode($data->template); ?>
-	<br />
-
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
 	<?php echo CHtml::encode($data->content); ?>
 	<br />

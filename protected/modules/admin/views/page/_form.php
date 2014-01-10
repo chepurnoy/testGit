@@ -31,12 +31,6 @@
 		<?php echo $form->error($model,'link'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'template'); ?>
-		<?php echo $form->dropDownList($model,'template',PageModel::getListTemplate()); ?>
-		<?php echo $form->error($model,'template'); ?>
-	</div>
-
         <div class="row">
             <?php echo $form->labelEx($model, 'content'); ?>
             <?php

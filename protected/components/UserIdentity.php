@@ -40,7 +40,7 @@ class UserIdentity extends CUserIdentity
             $this->errorCode = self::ERROR_NONE;
             return true;
         } else {
-            $this->errorMessage = 'Incorrect username or password';
+            $this->errorMessage = 'Incorrect email or password';
             return false;
         }
     }

@@ -33,7 +33,7 @@
             </p>
 
             <div class="row_form">
-            <?php echo CHtml::submitButton('Login'); ?>
+            <?php echo CHtml::submitButton('Login',array('class' => 'btn btn-default')); ?>
             </div>
 
 <?php $this->endWidget(); ?>

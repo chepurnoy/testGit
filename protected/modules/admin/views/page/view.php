@@ -23,7 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'title',
-		'template',
 		'content',
 	),
 )); ?>

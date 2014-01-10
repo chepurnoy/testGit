@@ -11,27 +11,30 @@
     </head>
     <div class="container">
         <header>
-             <?php 
+            <?php
             $this->widget(
-            'application.extensions.yiibooster.widgets.TbNavbar', array(
-            'brand' => 'Git Project',
-            'brandUrl' => Yii::app()->homeUrl,
-            'fixed' => true,
-            'items' => array(
-            array(
-                'class' => 'application.extensions.yiibooster.widgets.TbMenu',
+                    'application.extensions.yiibooster.widgets.TbNavbar', array(
+                'brand' => 'Git Project',
+                'brandUrl' => Yii::app()->homeUrl,
+                'fixed' => true,
                 'items' => array(
-                    array('label' => 'Contact', 'url' => array('site/contact')),
-                    array('label' => 'Registration', 'url' => array('/site/register'),'visible' => Yii::app()->user->isGuest),
-                    array('label' => 'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                    array('label' => 'Admin Panel', 'url' =>Yii::app()->createUrl('/admin'),'linkOptions' => array('target'=>'_blank'),'visible' => Yii::app()->user->getType() == 'admin'),
-                    array('label' => 'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                    array(
+                        'class' => 'application.extensions.yiibooster.widgets.TbMenu',
+                        'items' => array(
+                            array('label' => 'About', 'url' => array('/about')),
+                            array('label' => 'Small End Fast', 'url' => array('/small-and-fast')),
+                            array('label' => 'Distributed', 'url' => array('/distributed')),
+                            array('label' => 'Contact', 'url' => array('site/contact')),
+                            array('label' => 'Registration', 'url' => array('/site/register'), 'visible' => Yii::app()->user->isGuest),
+                            array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
+                            array('label' => 'Admin Panel', 'url' => Yii::app()->createUrl('/admin'), 'linkOptions' => array('target' => '_blank'), 'visible' => Yii::app()->user->getType() == 'admin'),
+                            array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                        )
+                    )
                 )
-            )
-        )
-            )
-    );
-        ?>
+                    )
+            );
+            ?>
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -41,22 +44,27 @@
             <?php endif ?>
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class='pull-right search'>
-                    <form class="form-search" action="<?php echo Yii::app()->createUrl('site/search'); ?>">
-                        <div class="input-append">
-                            <input type="text" name="title" class="span2 search-query">
-                            <button type="submit" class="btn">Search</button>
-                        </div>
-                    </form>
-                </div>
+                <form class="form-search" action="<?php echo Yii::app()->createUrl('site/search'); ?>">
+                    <div class="input-append">
+                        <input type="text" name="title" class="span2 search-query">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                </form>
+            </div>
             <div class="hero-unit">
 
                 <h1><?php echo CHtml::link("MobiDev GitHub Browser", Yii::app()->homeUrl); ?> >> <?php echo $this->pageTitle; ?></h1>
             </div>
-            <?php echo $content; ?>
         </header>
-        <footer>
-
-        </footer>
+        <?php echo $content; ?>
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    $(function() {
+        $(".nav").each(function() {
+            var currentUrl = "'<?php echo Yii::app()->getRequest()->getUrl(); ?>'";
+            $('a[href=' + currentUrl + ']').parent().addClass('active');
+        })
+    });
+</script>

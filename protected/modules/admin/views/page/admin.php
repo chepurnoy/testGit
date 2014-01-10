@@ -36,7 +36,6 @@ $this->widget('application.extensions.yiibooster.widgets.TbGridView', array(
     'filter' => $model,
     'columns' => array(
                 'title',
-		'template',
                 'link',
                 array(
                   'name'  => 'content',
