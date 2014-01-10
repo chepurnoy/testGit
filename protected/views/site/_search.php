@@ -11,9 +11,9 @@
     <div><strong>Description: </strong><?php echo $data['description']; ?></div>
     <div><strong>Forks: </strong><?php echo $data['forks']; ?></div>
     <?php if (LikesModel::checkUserLike($data['id'])): ?>
-            <?php echo CHtml::link('Like', array("user/addlike/id/$id"), array('class' => 'btn')); ?>
+            <?php echo CHtml::link('Like', array("user/addlike/id/$id",array('name' => $data['name'])), array('class' => 'btn')); ?>
         <?php else: ?>
-            <?php echo CHtml::link('UnLike', array("user/unlike/id/$id"), array('class' => 'btn')); ?>
+            <?php echo CHtml::link('UnLike', array("user/unlike/id/$id",array('name' => $data['name'])), array('class' => 'btn')); ?>
         <?php endif; ?>
 </div>
 

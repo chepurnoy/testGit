@@ -1,4 +1,7 @@
 <?php
+/**
+ * @author Igor Chepurnoy 
+ */
 Yii::import('application.helpers.GitRepositories');
 class UserController extends Controller {
 
@@ -13,8 +16,12 @@ class UserController extends Controller {
           'user' => $user
         ));
     }
-
-    public function actionAddLike($id)
+    /**
+     * @author    Igor Chepurnoy
+     * Action Add Like
+     * @param type $id
+     */
+    public function actionAddLike($id,$name)
     {
         $userIdLike = $id;
         //Get a Specific User
@@ -28,17 +35,17 @@ class UserController extends Controller {
             $model->userIdLike = $userIdLike;
             //Save data
             if ($model->save()) {
-                Yii::app()->user->setFlash('addLike', 'Your add like');
+                Yii::app()->user->setFlash('like', "Your add like to $name");
             }
         }
         $this->redirect($previousPage);
     }
 
     /**
-     * @author    Igor Chepurnoy <Chepurnoy@zfort.com>
-     *            UnLike Function
+     * @author    Igor Chepurnoy 
+     * UnLike Function
      */
-    public function actionUnLike($id)
+    public function actionUnLike($id,$name)
     {
         $userIdLike = $id;
         //Create Likes Model
@@ -50,7 +57,7 @@ class UserController extends Controller {
             //Delete like user
             if ($model->deleteAllByAttributes(array('userIdLike' => $userIdLike, 'ipUser' => Yii::app()->request->userHostAddress))) {
                 //Set Flash
-                Yii::app()->user->setFlash('addLike', 'Your unlike user');
+                Yii::app()->user->setFlash('like', "Your unlike $name");
             }
         }
         $this->redirect($previousPage);

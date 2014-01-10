@@ -3,10 +3,7 @@
 Yii::import('application.helpers.GitRepositories');
 
 /**
- * @author Igor Chepurnoy <@zfort.com>
- * @link http://www.zfort.com/
- * @copyright Copyright &copy; 2000-2013 Zfort Group
- * @license http://www.zfort.com/terms-of-use
+ * @author Igor Chepurnoy 
  */
 class SiteController extends Controller
 {
@@ -33,10 +30,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        // renders the view file 'protected/views/site/index.php'
-
         $this->pageTitle = "Main";
+        //Get Single repository
         $findRepository = GitRepositories::getFullDataRepository('yiisoft','yii');
+        //Get contributors
         $contributors   = GitRepositories::getContributorsUsers($findRepository['full_name']);
         $this->render('index', array(
             'repository'   => $findRepository,
@@ -56,8 +53,6 @@ class SiteController extends Controller
                 $this->render('error', $error);
         }
     }
-
-
 
     /**
      * Displays the login page
@@ -109,22 +104,28 @@ class SiteController extends Controller
      * Action Search
      */
     public function actionSearch(){
-
+        //Get param title
         $title = Yii::app()->request->getParam('title');
+        // Get results
         $result = GitRepositories::getSearchItems($title);
         $result = array_slice($result['items'], 0,10);
+        //Set page title
         $this->pageTitle = "For seacrh term - $title, found:";
         $dataProvider = new CArrayDataProvider($result, array(
             'pagination' => array(
                 'pageSize' => 5,
             )
         ));
-
         $this->render('search',array(
             'dataProvider' => $dataProvider
         ));
     }
-
+    
+    /**
+     * View Project
+     * @param type $owner
+     * @param type $repos
+     */
     public function actionViewProject($owner,$repos){
         $project = GitRepositories::getFullDataRepository($owner,$repos);
         $contributors   = GitRepositories::getContributorsUsers($project['full_name']);
