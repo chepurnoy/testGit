@@ -46,7 +46,7 @@ class LikesModel extends CActiveRecord
      */
     public static function checkUserLike($userIdLike)
     {
-        $ipUser = CHttpRequest::getUserHostAddress();
+        $ipUser = Yii::app()->request->userHostAddress;
         $model = LikesModel::model()->findAllByAttributes(array('ipUser' => $ipUser, 'userIdLike' => $userIdLike));
         if (empty($model)) {
             return true;

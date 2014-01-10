@@ -126,7 +126,7 @@ class SiteController extends Controller
     }
 
     public function actionViewProject($owner,$repos){
-        $project = GitRepositories::getSingleRepository($owner,$repos);
+        $project = GitRepositories::getFullDataRepository($owner,$repos);
         $contributors   = GitRepositories::getContributorsUsers($project['full_name']);
         $this->pageTitle = $project['description'];
         $this->render('viewProject',array(

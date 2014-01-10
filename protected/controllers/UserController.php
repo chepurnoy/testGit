@@ -24,7 +24,7 @@ class UserController extends Controller {
         // collect data
         if (isset($userIdLike)) {
             //collect user data
-            $model->ipUser = CHttpRequest::getUserHostAddress();
+            $model->ipUser = Yii::app()->request->userHostAddress;
             $model->userIdLike = $userIdLike;
             //Save data
             if ($model->save()) {
@@ -48,7 +48,7 @@ class UserController extends Controller {
         // collect data
         if (isset($userIdLike)) {
             //Delete like user
-            if ($model->deleteAllByAttributes(array('userIdLike' => $userIdLike, 'ipUser' => CHttpRequest::getUserHostAddress()))) {
+            if ($model->deleteAllByAttributes(array('userIdLike' => $userIdLike, 'ipUser' => Yii::app()->request->userHostAddress))) {
                 //Set Flash
                 Yii::app()->user->setFlash('addLike', 'Your unlike user');
             }
