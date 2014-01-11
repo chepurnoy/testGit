@@ -25,7 +25,7 @@
             $this->widget(
             'application.extensions.yiibooster.widgets.TbNavbar', array(
             'brand' => 'Git Project - Admin Panel',
-            'brandUrl' => $this->createUrl('block/admin'),
+            'brandUrl' => $this->createUrl('contact/admin'),
             'fixed' => true,
             'items' => array(
             array(
