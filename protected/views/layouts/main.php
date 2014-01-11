@@ -44,12 +44,7 @@
             <?php endif ?>
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class='pull-right search'>
-                <form class="form-search" action="<?php echo Yii::app()->createUrl('site/search'); ?>">
-                    <div class="input-append">
-                        <input type="text" name="title" class="span2 search-query">
-                        <button type="submit" class="btn">Search</button>
-                    </div>
-                </form>
+                <?php $this->widget('application.widgets.SearchWidget'); ?>
             </div>
             <div class="hero-unit">
 

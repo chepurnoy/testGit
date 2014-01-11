@@ -881,7 +881,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 }
 .search {
     margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 3px;
 }
 .errorMessage
 {
@@ -903,4 +903,8 @@ img.avatar{
 td.avatar img{
   width: 75px;
   height: 75px;
+}
+.search-button{
+    margin-top: 2px;
+    padding: 6px 8px;
 }

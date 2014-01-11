@@ -150,13 +150,19 @@ class SiteController extends Controller
      * Action Search
      */
     public function actionSearch(){
-        //Get param title
-        $title = Yii::app()->request->getParam('title');
+        $form = new SearchForm;
+
+        // if it is ajax validation request
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'seacrhform') {
+            echo CActiveForm::validate($form);
+            Yii::app()->end();
+        }
+        $title = Yii::app()->request->getPost('SearchForm');
         // Get results
-        $result = GitRepositories::getSearchItems($title);
+        $result = GitRepositories::getSearchItems($title['title']);
         $result = array_slice($result['items'], 0,10);
         //Set page title
-        $this->pageTitle = "For seacrh term - $title, found:";
+        $this->pageTitle = "For seacrh term - ".$title['title'].", found:";
         $dataProvider = new CArrayDataProvider($result, array(
             'pagination' => array(
                 'pageSize' => 5,
