@@ -197,6 +197,9 @@ class SiteController extends Controller
     public function actionPage($alias) {
         $this->layout = 'main';
         $page = PageModel::model()->findByAttributes(array('link' => $alias));
+//        $test = PageModel::generateMenu();
+//        var_dump($test);die;
+        
         $this->pageTitle = $page->title;
         if (empty($page)) {
             throw new CHttpException(404, 'The specified post cannot be found.');

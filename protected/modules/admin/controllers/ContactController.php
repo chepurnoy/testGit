@@ -26,7 +26,7 @@ class ContactController extends Controller {
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('index', 'create', 'update', 'admin', 'view', 'delete'),
+                'actions' => array('create', 'update', 'admin', 'delete', 'DeleteAll'),
                 'roles' => array('admin'),
             ),
             array('deny', // deny all users
@@ -35,15 +35,6 @@ class ContactController extends Controller {
         );
     }
 
-    /**
-     * Displays a particular model.
-     * @param integer $id the ID of the model to be displayed
-     */
-    public function actionView($id) {
-        $this->render('view', array(
-            'model' => $this->loadModel($id),
-        ));
-    }
 
     /**
      * Creates a new model.
@@ -102,14 +93,17 @@ class ContactController extends Controller {
     }
 
     /**
-     * Lists all models.
+     * Author Igor Chepurnoy
+     * Delete cheked contacts
      */
-    public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('ContactModel');
-        $this->render('index', array(
-            'dataProvider' => $dataProvider,
-        ));
+    public function actionDeleteAll() {
+        $id = Yii::app()->request->getPost("id");
+        foreach ($id as $value) {
+            $this->loadModel($value)->delete();
+        }
     }
+
+  
 
     /**
      * Manages all models.

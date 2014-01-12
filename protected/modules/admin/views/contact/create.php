@@ -3,16 +3,9 @@
 /* @var $model ContactModel */
 
 $this->breadcrumbs=array(
-	'Contact Models'=>array('index'),
+	'Contacts'=>array('admin'),
 	'Create',
 );
-
-$this->menu=array(
-	array('label'=>'List ContactModel', 'url'=>array('index')),
-	array('label'=>'Manage ContactModel', 'url'=>array('admin')),
-);
 ?>
-
-<h1>Create ContactModel</h1>
-
+<h1>Create Contact</h1>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
