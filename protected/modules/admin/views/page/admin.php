@@ -42,6 +42,12 @@ $this->widget('application.extensions.yiibooster.widgets.TbGridView', array(
                   'value' => 'TruncateText::truncate($data->content,100)',
                 ),
         array(
+            'class' => 'application.extensions.yiibooster.widgets.TbToggleColumn',
+            'toggleAction' => '/admin/page/toggle',
+            'name' => 'active',
+            'header' => 'Include in main menu',
+        ),
+        array(
             'class' => 'application.extensions.yiibooster.widgets.TbButtonColumn',
         )),
 ));

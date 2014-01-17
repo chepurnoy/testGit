@@ -16,7 +16,7 @@
                     'application.extensions.yiibooster.widgets.TbNavbar', array(
                 'brand' => 'Git Project',
                 'brandUrl' => Yii::app()->homeUrl,
-                'fixed' => true,
+                'fixed' => 'top',
                 'items' => array(
                     array(
                         'class' => 'application.extensions.yiibooster.widgets.TbMenu',
@@ -43,7 +43,7 @@
             <div class='pull-right search'>
                 <?php $this->widget('application.widgets.SearchWidget'); ?>
             </div>
-            <div class="hero-unit">
+            <div class="hero-unit my-hero-custom">
 
                 <h1><?php echo CHtml::link("MobiDev GitHub Browser", Yii::app()->homeUrl); ?> >> <?php echo $this->pageTitle; ?></h1>
             </div>

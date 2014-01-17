@@ -12,6 +12,8 @@
  */
 class PageModel extends CActiveRecord {
 
+    const ACTIVE = 1;
+    const NO_ACTIVE = 0;
     /**
      * @return string the associated database table name
      */
@@ -26,12 +28,12 @@ class PageModel extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('title,  content, link', 'required'),
-            array('title', 'length', 'max' => 50),
+            array('title,  content, link, active', 'required'),
+            array('title, active', 'length', 'max' => 50),
             array('link', 'length', 'max' => 75),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, link, title, content', 'safe', 'on' => 'search'),
+            array('id, link, active, title, content', 'safe', 'on' => 'search'),
         );
     }
 
@@ -53,6 +55,7 @@ class PageModel extends CActiveRecord {
             'id' => 'ID',
             'title' => 'Title',
             'content' => 'Content',
+            'active' => 'Visible in main menu?',
         );
     }
 
@@ -76,6 +79,7 @@ class PageModel extends CActiveRecord {
         $criteria->compare('id', $this->id);
         $criteria->compare('title', $this->title, true);
         $criteria->compare('content', $this->content, true);
+        $criteria->compare('active', $this->content, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
@@ -90,13 +94,13 @@ class PageModel extends CActiveRecord {
      */
     public static function generateMenu($arrayItems = array()) {
         // Find all items from db
-        $menu = PageModel::model()->findAll();
+        $menu = PageModel::model()->findAllByAttributes(array('active' => self::ACTIVE));
         //Generate array from this items
         foreach ($menu as $items) {
             $arr[] = array('label' => $items->title, 'url' => array(Yii::app()->createUrl($items->link)));
         }
         //Add to array additional items if they exist
-        if ($arrayItems != null) {
+        if ($arrayItems != null && isset($arr)) {
             for ($i = 0; $i < count($arrayItems); $i++) {
                 $arr[] = array_merge($arr, $arrayItems[$i]);
             }

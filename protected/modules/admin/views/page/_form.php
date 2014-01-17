@@ -47,7 +47,13 @@
             ?>
             <?php echo $form->error($model, 'content'); ?>
         </div>
-
+        
+        <div class="row">
+        <?php echo $form->labelEx($model, 'active'); ?>
+        <?php echo $form->checkBox($model,'active'); ?>
+	<?php echo $form->error($model,'active'); ?>
+        </div>
+        
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

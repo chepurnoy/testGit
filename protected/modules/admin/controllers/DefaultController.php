@@ -1,15 +1,13 @@
 <?php
 
-class DefaultController extends Controller
-{
-	public function actionIndex()
-        { 
+class DefaultController extends Controller {
 
-            if(Yii::app()->user->getType() == 'user' || Yii::app()->user->isGuest) {
-                $this->redirect(Yii::app()->createUrl('site/page?link=404'));
+    public function actionIndex() {
+        if (Yii::app()->user->getType() == 'user' || Yii::app()->user->isGuest) {
+            throw new CHttpException(404, 'The specified post cannot be found.');
+        } else {
+            $this->redirect(Yii::app()->createUrl('admin/contact/admin'));
         }
-        else {
-		$this->redirect(Yii::app()->createUrl('admin/contact/admin'));
-             }
-	}
+    }
+
 }
