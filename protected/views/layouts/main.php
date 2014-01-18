@@ -45,7 +45,7 @@
             </div>
             <div class="hero-unit my-hero-custom">
 
-                <h1><?php echo CHtml::link("MobiDev GitHub Browser", Yii::app()->homeUrl); ?> >> <?php echo $this->pageTitle; ?></h1>
+                <h1><?php   echo CHtml::link("MobiDev GitHub Browser", Yii::app()->homeUrl); ?> >> <?php  echo $this->pageTitle; ?></h1>
             </div>
         </header>
         <?php echo $content; ?>

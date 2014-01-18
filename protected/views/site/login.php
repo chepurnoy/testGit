@@ -1,12 +1,3 @@
-<div id="simple_header">
-    <div class="gradient">
-        <div class="header">
-            <h1>Login</h1>
-        </div>
-    </div>
-</div>
-<!-- Begin Content -->
-
 <div class="content spr">
     <div class="cont">
         <div class="contact_form">

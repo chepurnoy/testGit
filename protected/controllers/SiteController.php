@@ -49,7 +49,7 @@ class SiteController extends Controller
      * Action Register
      */
     public function actionRegister() {
-        $this->pageTitle = 'Registration Page';
+        $this->pageTitle = 'Registration';
         //Create models
         $userModel = new UserModel;
         $loginForm = new LoginForm;
@@ -119,7 +119,7 @@ class SiteController extends Controller
      * Displays the login page
      */
     public function actionLogin() {
-        $this->pageTitle = 'Login Page';
+        $this->pageTitle = 'Login';
         $model = new LoginForm;
 
         // if it is ajax validation request

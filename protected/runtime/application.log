@@ -135,3 +135,515 @@ in C:\make a website\testGit\index.php (12)
 in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
 in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
 in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/17 12:10:52 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 12:10:52 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 12:10:52 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 12:10:52 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/17 22:02:41 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 22:02:41 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":20000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 22:02:41 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/17 22:02:41 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 13:55:46 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:55:46 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:55:46 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:55:46 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 13:56:49 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:56:49 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:56:49 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:56:49 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 13:59:57 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:59:57 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:59:57 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 13:59:57 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:00:00 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:00 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:00 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:00 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:00:03 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:03 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:03 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:03 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:00:19 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:19 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:19 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:00:19 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:07:31 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:31 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:31 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:31 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:07:39 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:39 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:39 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:07:39 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:08:20 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:20 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:20 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:20 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:08:50 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:50 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:50 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:08:50 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:14:30 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:30 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:30 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:30 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:14:51 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:51 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:51 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:51 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:14:54 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:54 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:54 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:14:54 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:21:44 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:44 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:44 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:44 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:21:47 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:47 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:47 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:47 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:21:58 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:58 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:58 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:21:58 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:22:28 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:28 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:28 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:28 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:22:40 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:40 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:40 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:22:40 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:23:35 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:23:35 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:23:35 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:23:35 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:33:44 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:44 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":20000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:44 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:44 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:33:54 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:54 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":20000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:54 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:33:54 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:35:50 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:50 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:50 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:50 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:35:53 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:53 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:53 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:53 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:35:58 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:58 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:58 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:35:58 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:36:27 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:27 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:27 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:27 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:36:33 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:33 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:33 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:33 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:36:52 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:52 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:52 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:36:52 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:37:13 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:13 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:13 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:13 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:37:18 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:18 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:18 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:18 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
+2014/01/18 14:37:45 [info] [application] ACTION CALLED - action is: upload
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (22)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:45 [info] [application] ACTION CALLED - data is: {"allowedExtensions":["jpeg","jpg","gif","png"],"sizeLimit":100000000,"uploadDir":"C:\/make a website\/testGit\/uploads\/temp\/","uploadUrl":"http:\/\/testgit.dev\/uploads\/temp\/","receptorClassName":"application.models.UserModel","methodName":"onFileUploaded","userdata":[]}
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (37)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:45 [info] [application] ACTION CALLED - RESULT=SUCCESS
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (56)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodAction.php (22)
+in C:\make a website\testGit\index.php (12)
+2014/01/18 14:37:45 [info] [application] receptorClassName is: C:\make a website\testGit\protected\models\UserModel.php, className=UserModel
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (105)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (80)
+in C:\make a website\testGit\protected\extensions\cocoCod\CocoCodWidget.php (58)
