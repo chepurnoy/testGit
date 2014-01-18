@@ -35,23 +35,13 @@ class PageController extends Controller {
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('index', 'create', 'update', 'admin', 'view', 'delete', 'toggle','Editable'),
+                'actions' => array('create', 'update', 'admin', 'delete', 'toggle','Editable'),
                 'roles' => array('admin'),
             ),
             array('deny', // deny all users
                 'users' => array('*'),
             ),
         );
-    }
-
-    /**
-     * Displays a particular model.
-     * @param integer $id the ID of the model to be displayed
-     */
-    public function actionView($id) {
-        $this->render('view', array(
-            'model' => $this->loadModel($id),
-        ));
     }
 
     public function actionEditable() {
@@ -73,7 +63,7 @@ class PageController extends Controller {
         if (isset($_POST['PageModel'])) {
             $model->attributes = $_POST['PageModel'];
             if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
+                $this->redirect($this->createUrl('page/admin'));
         }
 
         $this->render('create', array(
@@ -95,7 +85,7 @@ class PageController extends Controller {
         if (isset($_POST['PageModel'])) {
             $model->attributes = $_POST['PageModel'];
             if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
+                $this->redirect($this->createUrl('page/admin'));
         }
 
         $this->render('update', array(
@@ -116,15 +106,6 @@ class PageController extends Controller {
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
 
-    /**
-     * Lists all models.
-     */
-    public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('PageModel');
-        $this->render('index', array(
-            'dataProvider' => $dataProvider,
-        ));
-    }
 
     /**
      * Manages all models.

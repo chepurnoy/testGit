@@ -4,29 +4,12 @@
 /* @var $model PageModel */
 
 $this->breadcrumbs=array(
-	'Pages'=>array('index'),
-	'Manage',
+	'Manage Pages',
 );
-
-$this->menu=array(
-	array('label'=>'List Pages', 'url'=>array('index')),
-	array('label'=>'Create Page', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#page-model-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
-
+<div class="page-header">
+<p><a class="btn btn-primary btn-lg" href="<?php echo Yii::app()->createUrl('admin/page/create'); ?>" role="button">Create Page</a></p>
+</div>
 <h1>Manage Pages</h1>
 <!-- search-form -->
 <?php
@@ -49,6 +32,7 @@ $this->widget('application.extensions.yiibooster.widgets.TbGridView', array(
         ),
         array(
             'class' => 'application.extensions.yiibooster.widgets.TbButtonColumn',
+            'template' => "{update}{delete}"
         )),
 ));
 ?>

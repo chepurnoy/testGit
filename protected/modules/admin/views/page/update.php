@@ -3,19 +3,11 @@
 /* @var $model PageModel */
 
 $this->breadcrumbs=array(
-	'Page Models'=>array('index'),
-	$model->title=>array('view','id'=>$model->id),
+	'Manage Pages'=>array('admin'),
 	'Update',
-);
-
-$this->menu=array(
-	array('label'=>'List PageModel', 'url'=>array('index')),
-	array('label'=>'Create PageModel', 'url'=>array('create')),
-	array('label'=>'View PageModel', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage PageModel', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update PageModel <?php echo $model->id; ?></h1>
+<h1>Update Page - <?php echo $model->title; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

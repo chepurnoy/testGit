@@ -6,7 +6,7 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('application.extensions.yiibooster.widgets.TbActiveForm', array(
 	'id'=>'page-model-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
@@ -30,7 +30,11 @@
 		<?php echo $form->textField($model,'link',array('size'=>75,'maxlength'=>75)); ?>
 		<?php echo $form->error($model,'link'); ?>
 	</div>
-
+        
+        <div class="row">
+                <?php echo $form->checkBoxRow($model,'active'); ?>
+        </div>
+        
         <div class="row">
             <?php echo $form->labelEx($model, 'content'); ?>
             <?php
@@ -47,15 +51,17 @@
             ?>
             <?php echo $form->error($model, 'content'); ?>
         </div>
-        
-        <div class="row">
-        <?php echo $form->labelEx($model, 'active'); ?>
-        <?php echo $form->checkBox($model,'active'); ?>
-	<?php echo $form->error($model,'active'); ?>
-        </div>
-        
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+          
+	<div class="row buttons buttonSubmit">
+		 <?php
+    $this->widget(
+            'application.extensions.yiibooster.widgets.TbButton', array(
+        'buttonType' => 'submit',
+        'type' => 'primary',
+        'label' => 'Submit'
+            )
+    );
+    ?>
 	</div>
 
 <?php $this->endWidget(); ?>
